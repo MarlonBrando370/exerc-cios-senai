@@ -32,7 +32,7 @@ if(salBruto <= 900){
     inss =(salBruto*10)/100;
     alert(`Salário bruto    ${salBruto} \n
 
-    ( – ) ISSS (10%)   : R$  ${inss} \n
+    ( – ) INSS (10%)   : R$  ${inss} \n
      
     FGTS ( 11%)     : R$  ${fgts} (Não é descontado da folha de pagamento) \n
     
@@ -43,7 +43,7 @@ if(salBruto <= 900){
 
     alert(`Salário bruto    ${salBruto} \n
 
-    ( – ) ISSS (20%)   : R$  ${inss} \n
+    ( – ) INSS (20%)   : R$  ${inss} \n
      
     FGTS ( 11%)     : R$  ${fgts} (Não é descontado da folha de pagamento)\n
     
