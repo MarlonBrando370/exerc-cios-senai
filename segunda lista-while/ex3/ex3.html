@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: 500px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input{
+            width: 70%;
+            height: 30px;
+        }
+        #botao{
+            width: 150px;
+            font-weight: bold;
+            background: rgb(207, 207, 207);
+        }
+        label{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <script src="ex3.js"></script>
+    <fieldset>
+        <label for="">Nome1</label><input type="text" id="nome1">
+
+
+           
+           <label for="">Nome2</label><input type="text" id="nome2">
+
+           <label for="">Nome3</label><input type="text" id="nome3">
+           
+           <label for="">Nome4</label><input type="text" id="nome4">
+           
+           <label for="">Nome5</label><input type="text" id="nome5">
+           
+        
+           <input type="button" value="CONFERIR" onclick="listaNome()" id="botao">
+    </fieldset>
+    <p id="resul"></p>
+
+        
+            
+   
+</body>
+</html>
