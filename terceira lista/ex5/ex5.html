@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      main{
+        display: flex;
+        justify-content: space-around;
+      }
+      
+        legend{
+            text-align: center;
+            font-size: 1.7em;
+            font-weight: bold;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+           width: 300px;
+            height: 200px;
+            margin: auto;
+            align-items: center;
+           
+        }
+        div{
+            height: 200px;
+            width: 200px;
+        }
+        label{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input{
+            height: 30px;
+            width: 200px;
+
+
+        }
+        #button{
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-weight: bold;
+            width: 100px;
+        }
+        #button:active{
+            width: 70px;
+            text-transform: lowercase;
+        }
+      #resul{
+        display: inline-block;
+        color: #fff;
+
+      }
+      P{
+        font-size: 2em;
+        font-weight: bold;
+      }
+    </style>
+</head>
+<body>
+    <script src="ex5.js"></script>
+    <main>
+        <form>
+            
+            <fieldset>
+            <legend>Veja sua média</legend>
+            <label for="">1°Avaliação</label><input type="number" id="num1">
+            
+            <label for="">2°Avaliação</label><input type="number" id="num2">
+            
+            <input type="button" value="Ver" onclick="calculaMedia()" id="button">
+            
+            
+        </fieldset>
+       
+    </form>
+    <div>
+        <P id="medi"></P>
+        <p id="resul"></p>
+    </div>
+    
+</main>
+   
+</body>
+</html>

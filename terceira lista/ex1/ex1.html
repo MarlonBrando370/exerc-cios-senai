@@ -5,9 +5,73 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background: rgba(16, 16, 173, 0.852);
+        }
+        *{padding: 0px;
+            margin: 0px;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+            color: #fff;
+        }
+        form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background: rgb(178, 177, 177);
+            padding: 20px;
+            width: 600px;
+            margin: 0px auto;
+        }
+        label{
+            font-size: 2em;
+            font-weight: bold;
+        }
+        input{
+            width: 400px;
+            height: 30px;
+            margin: 10px;
+        }
+        #button{
+            width: 150px;
+            height: 30px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        #button:active{
+            width: 100px;
+            text-transform: lowercase;
+        }
+        #resu{
+            font-weight: bolder;
+            font-size: 2em;
+            text-align: center;
+        }
+        div{
+            background: rgb(217, 215, 215);
+            width:640px ;
+            height: 50px;
+            margin: 5px auto;
+        }
+    </style>
 </head>
 <body>
     <script src="ex1.js"></script>
+    <h1>Conversor de graus Fahrenheit para graus Celsius</h1>
+
+    <form >
+        <label for="">Informe o valor em Fahrenheit</label><input type="number" id="vF">
+
+        <input type="button" value="Converter" onclick="calc()" id="button">
+        
+        
+    </form>
+    <div>
+        <p id="resu"></p>
+    </div>
     
 </body>
 </html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        h1{
+            text-align: center;
+            margin: 10px 0px 20px 0px;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            height: 270px;
+            background: rgb(209, 209, 209);
+            
+        }
+        label{
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        input{
+            height: 30px;
+            
+        }
+        #button{
+            width: 150px;
+            height: 30px;
+            margin: 10px auto;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        div{
+            background: rgb(212, 209, 209);
+            width: 505px;
+            height: 50px;
+            margin-top: 5px;
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            box-shadow: 1px 1px 4px black;
+        }
+    </style>
+</head>
+<body>
+    <script src="ex2.js"></script>
+    <h1>Veja sua média final</h1>
+    <form >
+
+        <fieldset>
+            
+            
+            <label for="">Nota1</label>
+            <input type="number" id="n1">
+            <label for="">Nota2</label>
+            <input type="number" id="n2">
+            <label for="">Nota3</label>
+            <input type="number" id="n3">
+            <input type="button" value="Calcular" onclick="calcula()" id="button">
+        </fieldset>
+        <div>
+            <h2 id="resu"></h2>
+        </div>
+    </form>
+</body>
+</html>
