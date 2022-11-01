@@ -14,6 +14,7 @@ if(media >= 6){
 }else{
     txtMed.innerHTML=`Média: ${media}`;
     res.innerHTML=`REPROVADO`;
+    res.style.backgroundColor='red';
 }
 
 }

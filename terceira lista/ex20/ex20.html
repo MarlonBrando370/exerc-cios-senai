@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        header{
+            text-align: center;
+        }
+        #h1_senai{
+            background-color: rgb(255, 0, 0);
+            display: inline;
+            font-size: 2.9em;
+            color: #fff;
+            padding: 0px 10px;
+            
+        }
+        legend{
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        fieldset{
+            display: flex;
+            flex-direction: column;
+        }
+        .label{
+            margin-bottom: 25px;
+        }
+        input{
+            height: 20px;
+            border: 2px solid ;
+        }
+        label{
+            margin-top: 4px;
+            font-size: 1.5em;
+        }
+       
+        .input_alt{
+            margin-left: 50px;
+        }
+        .input_matricula{
+            margin-left: 19px;
+        }
+        #altura10{
+            margin-left: 42px;
+        }
+        #inpu_matri10{
+            margin-left: 11px;
+        }
+        #button{
+            width: 150px;
+            margin: 50px auto 5px auto ;
+            height: 30px;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        p{
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="h1_senai">Senai</h1>
+        <h1>Sistema de cadastro</h1>
+    </header>
+    <form>
+        <fieldset>
+            <legend>Matrículas</legend>
+            <label for="" ">Altura1 <input type="number" id="altura1" class="input_alt"></label>
+            <label for="" >Matrícula1 <input type="number" id="inpu_matri1" class="input_matricula label"></label>
+
+            <label for="">Altura2 <input type="number" id="altura2" class="input_alt"></label>
+            <label for="">Matrícula2 <input type="number" id="inpu_matri2" class="input_matricula label"></label>
+            
+            <label for="">Altura3 <input type="number" id="altura3" class="input_alt"></label>
+            <label for="">Matrícula3 <input type="number" id="inpu_matri3" class="input_matricula label"></label>
+
+            <label for="">Altura4 <input type="number" id="altura4" class="input_alt"></label>
+            <label for="">Matrícula4 <input type="number" id="inpu_matri4" class="input_matricula label"></label>
+
+            <label for="">Altura5 <input type="number" id="altura5" class="input_alt"></label>
+            <label for="">Matricula5 <input type="number" id="inpu_matri5" class="input_matricula label"></label>
+
+            <label for="">Altura6 <input type="number" id="altura6" class="input_alt"></label>
+            <label for="">Matrícula6 <input type="number" id="inpu_matri6" class="input_matricula label"></label>
+
+            <label for="">Altura7 <input type="number" id="altura7" class="input_alt"></label>
+            <label for="">Matrícula7 <input type="number" id="inpu_matri7" class="input_matricula label"></label>
+
+            <label for="">Altura8 <input type="number" id="altura8" class="input_alt"></label>
+            <label for="">Matrícula8 <input type="number" id="inpu_matri8" class="input_matricula label"></label>
+
+            <label for="">Altura9 <input type="number" id="altura9" class="input_alt"></label>
+            
+            <label for="">Matrícula9 <input type="number" id="inpu_matri9" class="input_matricula label"></label>
+
+            <label for="">Altura10 <input type="number" id="altura10" ></label>
+            <label for="">Matrícula10 <input type="number" id="inpu_matri10"></label>
+            <input type="button" value="Registrar" onclick="cadastros()" id="button">
+        </fieldset>
+    </form>
+    <div>
+        <p id="pMai_Altura"></p><br>
+        <p id="pMai_Matricula"></p>
+    </div><br><br>
+    <div>
+        
+        <p id="pMenor_Altura"></p><br>
+        <p id="pMenor_Matricula"></p>
+    </div>
+    <script src="ex20.js"></script>
+    
+</body>
+</html>
