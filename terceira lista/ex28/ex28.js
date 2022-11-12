@@ -1,6 +1,8 @@
 
-    var nem1 =  document.querySelector('input#name1').value
-    
+/*
+function calcular(){
+    var nem1 =  document.querySelector('#name1').value
+  
     var nem2 = document.querySelector('#name2').value ;
     var nem3 = document.querySelector('#name3').value;
     var nem4 = document.querySelector('#name4').value;
@@ -22,16 +24,16 @@
     var wage9_input =document.querySelector('#wage9').value;
     var wage10_input =document.querySelector('#wage10').value;
 
-    var pNeme1 = document.querySelector('p#p_neme1');
+    var pNeme1 = document.querySelector('#p_neme1');
     var pNeme2 = document.querySelector('#p_neme2');
-    var pNeme1 = document.querySelector('#p_neme3');
-    var pNeme1 = document.querySelector('#p_neme4');
-    var pNeme1 = document.querySelector('#p_neme5');
-    var pNeme1 = document.querySelector('#p_neme6');
-    var pNeme1 = document.querySelector('#p_neme7');
-    var pNeme1 = document.querySelector('#p_neme8');
-    var pNeme1 = document.querySelector('#p_neme9');
-    var pNeme1 = document.querySelector('#p_neme10');
+    var pNeme3 = document.querySelector('#p_neme3');
+    var pNeme4 = document.querySelector('#p_neme4');
+    var pNeme5 = document.querySelector('#p_neme5');
+    var pNeme6 = document.querySelector('#p_neme6');
+    var pNeme7 = document.querySelector('#p_neme7');
+    var pNeme8 = document.querySelector('#p_neme8');
+    var pNeme9 = document.querySelector('#p_neme9');
+    var pNeme10 = document.querySelector('#p_neme10');
 
     var pSalAntigo1 = document.querySelector("p#salario_antigo1");
     var pSalAntigo2 = document.querySelector("#salario_antigo2");
@@ -44,14 +46,34 @@
     var pSalAntigo9 = document.querySelector("#salario_antigo9");
     var pSalAntigo10 = document.querySelector("#salario_antigo10");
 
-    var pPorcentagem = document.querySelector('p#porcentagem1');
-    var t = document.querySelector('#teste');
+   
 
+    var pPorcentagem = document.querySelector('p#porcentagem1');
+   
     var novoSal = document.querySelector('#salario_novo1');
-     
    
     
-    
+    pNeme1.innerHTML=nem1
+}
+     
+   
+  */
+salario=[
+
+]
+var c=0;
+
+while(c<10 ){
+
+    var sal = Number(prompt('Informe o salário do funcionário'));
+    salario.push(sal);
+    c++
+}
+
+ 
+  
+   alert(salario)
+  
     
     
     

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="shortcut icon" href="img/favicon-calculadora.ico" type="image/x-icon">
+
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body" onchange="tema()" class="theme_1">
+   
+    <main>
+        <div class="container_top">
+            <h1>calc</h1>
+            <div class=" container_top">
+                <h1>theme</h1>
+                <input type="checkbox" name=""  id="check">
+            </div>
+        </div>
+        <div class="container_res">
+            <input  class="input_res" id="inpu_res"  readonly >
+        </div>
+        <div class="container_principal">
+            
+                <div class="opcao ">
+                    <input type="button" value="7" class="opcao_input " onclick="option(7)">
+                </div>
+
+                <div class="opcao">
+                    <input type="button" value="8" class="opcao_input" onclick="option(8)">
+                </div>
+
+                <div class="opcao">
+                    <input type="button" value="9" class="opcao_input" onclick="option(9)">
+                </div>
+                <div class="opcao">
+                    <input type="button" value="DEL" class="opcao_input del" onclick="delet()">
+                </div>
+                <div class="opcao">
+                    <input type="button" value="4" class="opcao_input" onclick="option(4)">
+                </div>
+                <div class="opcao">
+                <input type="button" value="5" class="opcao_input" onclick="option(5)">
+            </div>
+            <div class="opcao">
+                <input type="button" value="6" class="opcao_input" onclick="option(6)">
+            </div>
+            <div class="opcao">
+                <input type="button" value="+" class="opcao_input" onclick="option('+')">
+            </div>
+            <div class="opcao">
+                <input type="button" value="1" class="opcao_input" onclick="option(1)">
+            </div>
+            <div class="opcao">
+                <input type="button" value="2" class="opcao_input" onclick="option(2)">
+            </div>
+            <div class="opcao">
+                <input type="button" value="3" class="opcao_input" onclick="option(3)">
+            </div>
+            <div class="opcao">
+                <input type="button" value="-" class="opcao_input" onclick="option('-')" id="menos">
+            </div>
+            <div class="opcao">
+                <input type="button" value="." class="opcao_input" onclick="option('.')" id="ponto">
+            </div>
+            <div class="opcao">
+                <input type="button" value="0" class="opcao_input" onclick="option(0)">
+            </div>
+            <div class="opcao">
+                <input type="button" value="/" class="opcao_input" onclick="option('/')">
+            </div>
+            <div class="opcao">
+                <input type="button" value="x" class="opcao_input" onclick="option('*')">
+            </div>
+            <div class="opcao ultimo">
+                <input type="button" value="RESET" class="opcao_input reset" onclick="rese()">
+            </div>
+            <div class="opcao ultimo">
+                <input type="button" value="=" class="opcao_input igual" onclick="calc()">
+            </div>
+            
+        </div>
+       
+    </main>
+    <script src="script/script.js"></script>
+</body>
+</html>
