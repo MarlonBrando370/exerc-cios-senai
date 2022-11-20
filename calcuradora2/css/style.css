@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.theme_1{
+  --theme: url('../img/dragon-1.jpg');
+  --theme_button: url('../img/goku.webp');
+  --shedom: rgb(0, 0, 0);
+}
+
+.theme_2{
+    --theme:rgba(165, 165, 246, 0.889);
+   
+    --shedom: #fff;
+
+}
+
+body{
+    background-image: var(--theme);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    width: 40vw;
+    padding: 10px;
+    
+    
+}
+.container_top{
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+}
+#check{
+    display: flex;
+    
+}
+.them{
+    display: flex;
+}
+
+.container_top, .them > h1{
+    color: rgb(0, 0, 0);
+    
+}
+
+.input_res{
+    width: 60vw;
+    height: 6vh;
+    border-radius: 8px;
+    background: rgba(45, 45, 116, 0.772);
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 2em;
+    color: #fff;
+    font-weight: bold;
+}
+.container_principal{
+    width: 60vw;
+    height: 40vh;
+    background: rgba(45, 45, 116, 0.772);
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 10px var(--shedom);
+    
+}
+.opcao{
+    width: 21%;
+    height: 7vh;
+}
+.opcao_input{
+    background-image: var(--theme_button);
+    background-size: cover;
+    color: rgb(0, 242, 255);
+    font-weight: bolder;
+    text-shadow: 5px 1px 1px black;
+    border: 3px solid rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 3em;
+    font-weight: bolder;
+
+}
+.opcao_input:hover{
+    background: rgba(90, 90, 193, 0.071);
+    transition: 0.8s;
+}
+.opcao_input:active{
+   /* width: 8vw;
+    height: 6vh;
+    font-size: ;
+    */
+    transform: scale(0.8);
+}
+#ponto{
+    font-size: 3em;
+}
+#menos{
+    font-size: 3em;
+}
+
+.del{
+    background: rgb(69, 69, 255);
+    color: #fff;
+}
+
+.ultimo{
+    flex-grow: 1;
+}
+.reset{
+    width: 100%;
+    background: rgb(69, 69, 255);
+    color: #fff;
+}
+.reset:active{
+    transform: scale(0.9);
+}
+.igual{
+    width: 100%;
+    background: rgb(249, 26, 26);
+    color: #fff;
+}
+.igual:active{
+    transform: scale(0.9);
+}
